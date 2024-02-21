@@ -1,11 +1,13 @@
 footer .footer-wraper {
   height: 310px;
   background-color: #eaeaea;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 13% 1fr 1fr 1fr 13%;
+  padding-top: 52px;
 }
 footer .footer-wraper .footer-logo {
+  grid-column: 2/3;
+  justify-self: left;
   max-width: 175px;
   display: flex;
   flex-direction: column;
@@ -14,8 +16,10 @@ footer .footer-wraper .footer-logo .footer-logo__picture {
   width: 100%;
 }
 footer .footer-wraper .footer-contacts {
+  justify-self: center;
+  grid-column: 3/4;
   width: 181px;
-  height: 60%;
+  height: 49%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -29,6 +33,8 @@ footer .footer-wraper .footer-contacts .footer-contacts__icons {
   justify-content: space-between;
 }
 footer .footer-wraper .footer-organization {
+  grid-column: 4/5;
+  justify-self: end;
   width: 440px;
   text-align: end;
 }/*# sourceMappingURL=contacts.css.map */
