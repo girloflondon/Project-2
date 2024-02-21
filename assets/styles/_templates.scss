@@ -23,6 +23,10 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      font-family: $font_main;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20.46px;
       .footer-contacts__mail {
         text-decoration: none;
         color: black;
@@ -37,6 +41,10 @@
       justify-self: end;
       width: 440px;
       text-align: end;
+      font-family: $font_main;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20.46px;
     }
   }
 }

@@ -1,3 +1,19 @@
+@font-face {
+  src: url("../fonts/NunitoSans-VariableFont.ttf");
+  font-family: "Nunito";
+}
+@font-face {
+  font-family: "Scada";
+  font-style: regular;
+  font-weight: 400;
+  src: local("../fonts/Scada-Regular.ttf");
+}
+@font-face {
+  font-family: "Scada";
+  font-style: bold;
+  font-weight: 700;
+  src: local("../fonts/Scada-Bold.ttf");
+}
 footer .footer-wraper {
   height: 310px;
   background-color: #eaeaea;
@@ -23,6 +39,10 @@ footer .footer-wraper .footer-contacts {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20.46px;
 }
 footer .footer-wraper .footer-contacts .footer-contacts__mail {
   text-decoration: none;
@@ -37,4 +57,8 @@ footer .footer-wraper .footer-organization {
   justify-self: end;
   width: 440px;
   text-align: end;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20.46px;
 }/*# sourceMappingURL=about.css.map */
