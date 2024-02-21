@@ -1,1 +1,34 @@
-/*# sourceMappingURL=about.css.map */
+footer .footer-wraper {
+  height: 310px;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+footer .footer-wraper .footer-logo {
+  max-width: 175px;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-wraper .footer-logo .footer-logo__picture {
+  width: 100%;
+}
+footer .footer-wraper .footer-contacts {
+  width: 181px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer-wraper .footer-contacts .footer-contacts__mail {
+  text-decoration: none;
+  color: black;
+}
+footer .footer-wraper .footer-contacts .footer-contacts__icons {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-wraper .footer-organization {
+  width: 440px;
+  text-align: end;
+}/*# sourceMappingURL=about.css.map */

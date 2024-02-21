@@ -1,2 +1,6 @@
 @import "../vars";
 @import "../templates";
+
+footer {
+  @extend %footer;
+}

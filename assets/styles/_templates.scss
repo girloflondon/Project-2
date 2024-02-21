@@ -1,0 +1,36 @@
+%footer {
+  .footer-wraper {
+    height: 310px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    .footer-logo {
+      max-width: 175px;
+      display: flex;
+      flex-direction: column;
+      .footer-logo__picture {
+        width: 100%;
+      }
+    }
+    .footer-contacts {
+      width: 181px;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .footer-contacts__mail {
+        text-decoration: none;
+        color: black;
+      }
+      .footer-contacts__icons {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .footer-organization {
+      width: 440px;
+      text-align: end;
+    }
+  }
+}
