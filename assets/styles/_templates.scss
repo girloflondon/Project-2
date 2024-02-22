@@ -8,12 +8,10 @@
     .footer-logo {
       grid-column: 2/3;
       justify-self: left;
-      max-width: 175px;
+      max-width: 173px;
+      height: 115px;
       display: flex;
       flex-direction: column;
-      .footer-logo__picture {
-        width: 100%;
-      }
     }
     .footer-contacts {
       justify-self: center;
@@ -23,10 +21,8 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      font-family: $font_main;
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 20.46px;
+      @extend %organizationfont;
+
       .footer-contacts__mail {
         text-decoration: none;
         color: black;
@@ -41,10 +37,14 @@
       justify-self: end;
       width: 440px;
       text-align: end;
-      font-family: $font_main;
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 20.46px;
+      @extend %organizationfont;
     }
   }
+}
+
+%organizationfont {
+  font-family: $font_main;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20.46px;
 }

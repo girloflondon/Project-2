@@ -24,12 +24,10 @@ footer .footer-wraper {
 footer .footer-wraper .footer-logo {
   grid-column: 2/3;
   justify-self: left;
-  max-width: 175px;
+  max-width: 173px;
+  height: 115px;
   display: flex;
   flex-direction: column;
-}
-footer .footer-wraper .footer-logo .footer-logo__picture {
-  width: 100%;
 }
 footer .footer-wraper .footer-contacts {
   justify-self: center;
@@ -39,10 +37,6 @@ footer .footer-wraper .footer-contacts {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: "Nunito", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20.46px;
 }
 footer .footer-wraper .footer-contacts .footer-contacts__mail {
   text-decoration: none;
@@ -57,6 +51,9 @@ footer .footer-wraper .footer-organization {
   justify-self: end;
   width: 440px;
   text-align: end;
+}
+
+footer .footer-wraper .footer-contacts, footer .footer-wraper .footer-organization {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 15px;
