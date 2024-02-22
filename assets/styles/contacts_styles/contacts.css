@@ -57,6 +57,16 @@ footer .footer-wraper {
   grid-template-columns: 13% 1fr 1fr 1fr 13%;
   padding-top: 52px;
 }
+@media screen and (max-width: 1690px) {
+  footer .footer-wraper {
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+  }
+}
+@media screen and (max-width: 800px) {
+  footer .footer-wraper {
+    grid-template-columns: 5% 1fr 5%;
+  }
+}
 footer .footer-wraper .footer-logo {
   grid-column: 2/3;
   justify-self: left;
@@ -64,6 +74,11 @@ footer .footer-wraper .footer-logo {
   height: 115px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 800px) {
+  footer .footer-wraper .footer-logo {
+    justify-self: center;
+  }
 }
 footer .footer-wraper .footer-contacts {
   justify-self: center;
@@ -74,9 +89,25 @@ footer .footer-wraper .footer-contacts {
   flex-direction: column;
   justify-content: space-between;
 }
+@media screen and (max-width: 800px) {
+  footer .footer-wraper .footer-contacts {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+}
+@media screen and (max-width: 800px) {
+  footer .footer-wraper .footer-contacts .footer-contacts__adress {
+    display: none;
+  }
+}
 footer .footer-wraper .footer-contacts .footer-contacts__mail {
   text-decoration: none;
   color: black;
+}
+@media screen and (max-width: 800px) {
+  footer .footer-wraper .footer-contacts .footer-contacts__mail {
+    display: none;
+  }
 }
 footer .footer-wraper .footer-contacts .footer-contacts__icons {
   display: flex;
@@ -88,8 +119,33 @@ footer .footer-wraper .footer-organization {
   width: 440px;
   text-align: end;
 }
+@media screen and (max-width: 1390px) {
+  footer .footer-wraper .footer-organization {
+    display: none;
+  }
+}
+footer .footer-wraper .footer-organization_small {
+  display: none;
+}
+@media screen and (max-width: 1390px) {
+  footer .footer-wraper .footer-organization_small {
+    display: block;
+    grid-column: 4/5;
+    justify-self: end;
+    text-align: end;
+  }
+}
+@media screen and (max-width: 1390px) and (max-width: 800px) {
+  footer .footer-wraper .footer-organization_small {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: center;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
 
-.header .header-text, footer .footer-wraper .footer-contacts, footer .footer-wraper .footer-organization {
+.header .header-text, .footer .footer-wraper .footer-contacts, footer .footer-wraper .footer-organization, footer .footer-wraper .footer-organization_small {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 15px;
