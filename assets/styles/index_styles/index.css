@@ -1,3 +1,19 @@
+@font-face {
+  src: url("../fonts/NunitoSans-VariableFont.ttf");
+  font-family: "Nunito";
+}
+@font-face {
+  font-family: "Scada";
+  font-style: regular;
+  font-weight: 400;
+  src: local("../fonts/Scada-Regular.ttf");
+}
+@font-face {
+  font-family: "Scada";
+  font-style: bold;
+  font-weight: 700;
+  src: local("../fonts/Scada-Bold.ttf");
+}
 footer .footer-wraper {
   height: 310px;
   background-color: #eaeaea;
@@ -8,12 +24,10 @@ footer .footer-wraper {
 footer .footer-wraper .footer-logo {
   grid-column: 2/3;
   justify-self: left;
-  max-width: 175px;
+  max-width: 173px;
+  height: 115px;
   display: flex;
   flex-direction: column;
-}
-footer .footer-wraper .footer-logo .footer-logo__picture {
-  width: 100%;
 }
 footer .footer-wraper .footer-contacts {
   justify-self: center;
@@ -37,4 +51,11 @@ footer .footer-wraper .footer-organization {
   justify-self: end;
   width: 440px;
   text-align: end;
+}
+
+footer .footer-wraper .footer-contacts, footer .footer-wraper .footer-organization {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20.46px;
 }/*# sourceMappingURL=index.css.map */
