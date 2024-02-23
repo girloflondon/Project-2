@@ -14,6 +14,42 @@
   font-weight: 700;
   src: local("../fonts/Scada-Bold.ttf");
 }
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 180px 1fr 310px;
+}
+
+.header {
+  padding: 0 13%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-nav__items {
+  display: flex;
+  gap: 70px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+}
+.header .header-nav__link {
+  text-decoration: none;
+  color: #000;
+}
+.header .header-text {
+  max-width: 400px;
+  text-align: right;
+}
+.header .burger {
+  display: none;
+}
+.header .active-page {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
 footer .footer-wraper {
   height: 310px;
   background-color: #eaeaea;
@@ -109,9 +145,13 @@ footer .footer-wraper .footer-organization_small {
   }
 }
 
-footer .footer-wraper .footer-contacts, footer .footer-wraper .footer-organization, footer .footer-wraper .footer-organization_small {
+.header .header-text, footer .footer-wraper .footer-contacts, footer .footer-wraper .footer-organization, footer .footer-wraper .footer-organization_small {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 20.46px;
+}
+
+* {
+  box-sizing: border-box;
 }/*# sourceMappingURL=about.css.map */
