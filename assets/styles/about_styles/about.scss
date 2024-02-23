@@ -1,6 +1,19 @@
 @import "../vars";
 @import "../templates";
 
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  @extend %container;
+}
+
+.header {
+  @extend %header;
+}
+
+/* Main */
 .container-about__wrapper {
   max-width: 1920px;
   margin: 0 auto;
@@ -267,9 +280,9 @@
         transition: opacity 0.2s ease-out;
       }
     }
-  }
-}
-
+  }  
+  
+/* Footer */
 footer {
   @extend %footer;
 }

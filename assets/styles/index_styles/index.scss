@@ -1,6 +1,18 @@
 @import "../vars";
 @import "../templates";
 
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  @extend %container;
+}
+
+.header {
+  @extend %header;
+}
+
 footer {
   @extend %footer;
 }
