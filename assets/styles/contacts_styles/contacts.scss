@@ -1,0 +1,51 @@
+@import "../vars";
+@import "../templates";
+
+.container {
+  @extend %container;
+}
+
+.header {
+  @extend %header;
+}
+
+.contacts__container {
+  width: 95vw;
+  height: 50vh;
+  .contacts__wrapper {
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    .contacts__info {
+      width: 30%;
+      .contacts__info-title {
+        font-family: $font_main;
+        font-size: 28px;
+        line-height: 40px;
+        width: 700;
+        margin-bottom: 30px;
+      }
+      .contacts__info-line {
+        font-family: $font_main;
+        font-family: Nunito;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 35px;
+        width: 194px;
+      }
+      .card__img {
+        margin-right: 35px;
+      }
+    }
+    .contacts__map {
+      width: 70%;
+    }
+  }
+}
+
+footer {
+  @extend %footer;
+}
