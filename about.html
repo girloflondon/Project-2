@@ -17,49 +17,43 @@
     />
   </head>
   <body>
- 
-    <!-- Header --> 
-    
     <div class="container">
       <header class="header">
-        <img
-          class="header-logo"
-          src="./assets/images/index/logo.png"
-          alt="logo"
-        />
-        <nav class="header-nav">
-          <ul class="header-nav__items">
-            <li class="header-nav__item">
-              <a href="index.html" class="header-nav__link">Главная</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="about.html" class="header-nav__link active-page"
-                >О нас</a
-              >
-            </li>
-            <li class="header-nav__item">
-              <a href="contacts.html" class="header-nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <p class="header-text">
-          Калининградская региональная общественная организация развития
-          инфраструктуры, благоустройства и общественного контроля “Дорожный
-          патруль”
-        </p>
+        <a class="header-link__logo" href="index.html">
+          <img
+            class="header-logo"
+            src="./assets/images/header-footer/logo.png"
+            alt="logo"
+        /></a>
+        <div class="header__block">
+          <nav class="header-nav">
+            <ul class="header-nav__items">
+              <li class="header-nav__item">
+                <a href="about.html" class="header-nav__link active-page"
+                  >О нас</a
+                >
+              </li>
+              <li class="header-nav__item">
+                <a href="contacts.html" class="header-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="header-text">
+            Калининградская региональная общественная организация развития
+            инфраструктуры, благоустройства и общественного контроля “Дорожный
+            патруль”
+          </p>
+        </div>
         <div class="burger">
           <span></span>
         </div>
       </header>
-      
-      
-      <!-- Main -->
-      <main class="main">
-      <div class="container-about__wrapper">
-        <div class="container-about__content">
-          <h2 class="container-about__title">О нас</h2>
-          <section class="container-about__description">
-            <p class="container-about__description-text">
+      <main>
+        <div class="container-about__wrapper">
+          <div class="container-about__content">
+            <h2 class="container-about__title">О нас</h2>
+            <section class="container-about__description">
+               <p class="container-about__description-text">
               Наша деятельность направлена на создание эффективного
               взаимодействия между гражданами и муниципальными организациями,
               деятельность которых связана с инфраструктурой и благоустройством.
@@ -70,8 +64,8 @@
               непосредственно до адресата - муниципальных организаций,
               отвечающих за содержание указанных объектов, минуя официальные
               процедуры (30 дней на рассмотрение обращений).
-            </p>
-            <p class="container-about__description-text">
+              </p>
+              <p class="container-about__description-text">
               Деятельность нашей организации является добровольной и
               безвозмездной, мы не получаем финансирования от государственных
               или муниципальных организаций.
@@ -165,7 +159,6 @@
                 />
                 <input
                   class="article-input"
-                  class="article-input"
                   type="radio"
                   name="slider"
                   id="switch3"
@@ -188,26 +181,31 @@
                       <article>
                         <img
                           src="./assets/images/about/photo_2024-01-27_14-41-02_1.png"
+                          alt="яма на дороге и камни"
                         />
                       </article>
                       <article>
                         <img
                           src="./assets/images/about/photo_2024-02-19_19-20-09_2.png"
+                          alt="яма на дороге и лужа"
                         />
                       </article>
                       <article>
                         <img
                           src="./assets/images/about/photo_2024-02-19_19-20-17_2.png"
+                          alt="яма на дороге и гравий"
                         />
                       </article>
                       <article>
                         <img
                           src="./assets/images/about/photo_2024-02-19_19-20-29_1.png"
+                          alt="яма на дороге и разметка"
                         />
                       </article>
                       <article>
                         <img
                           src="./assets/images/about/photo_2024-02-19_19-20-32_1.png"
+                          alt="яма на дороге и деревья"
                         />
                       </article>
                     </div>
@@ -233,18 +231,14 @@
         </div>
       </div>
     </main>
-      
-      
-      <!-- Footer -->
     <footer>
       <div class="footer-wraper">
         <div class="footer-logo">
-          <div class="footer-logo__title">ДОРОЖНЫЙ ПАТРУЛЬ</div>
           <img class="footer-logo__picture"
           src=./assets/images/header-footer/logo.png alt="logo" />
         </div>
         <div class="footer-contacts">
-          <p>г.Калининград ул. Коммунальная, д. 4-6. пом. IV</p>
+          <p>г.Калининград, ул. Коммунальная, д. 4-6. пом. IV</p>
           <p>
             <a class="footer-contacts__mail" href="mailto:okbdd39@mail.ru"
               >okbdd39@mail.ru</a
@@ -272,10 +266,11 @@
           </div>
         </div>
         <div class="footer-organization">
-            <p>Калининградская региональная общественная</p>
-            <p>организация развития инфраструктуры, благоустройства</p>
-            <p>и общественного контроля “Дорожный патруль”</p>
-      </footer>
-    </div>
+          <p>Калининградская региональная общественная</p>
+          <p>организация развития инфраструктуры, благоустройства</p>
+          <p>и общественного контроля “Дорожный патруль”</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
