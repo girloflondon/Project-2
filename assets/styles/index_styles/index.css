@@ -29,7 +29,7 @@
 .header .header-nav__items {
   display: flex;
   gap: 70px;
-  font-family: "Nunito", sans-serif;
+  font-family: N;
   font-weight: 700;
   font-size: 15px;
   line-height: 20px;

@@ -1,0 +1,99 @@
+@font-face {
+  src: url("../fonts/NunitoSans-VariableFont.ttf");
+  font-family: "Nunito";
+}
+@font-face {
+  font-family: "Scada";
+  font-style: regular;
+  font-weight: 400;
+  src: local("../fonts/Scada-Regular.ttf");
+}
+@font-face {
+  font-family: "Scada";
+  font-style: bold;
+  font-weight: 700;
+  src: local("../fonts/Scada-Bold.ttf");
+}
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 180px 1fr 310px;
+}
+
+.header {
+  padding: 0 13%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-nav__items {
+  display: flex;
+  gap: 70px;
+  font-family: N;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+}
+.header .header-nav__link {
+  text-decoration: none;
+  color: #000;
+}
+.header .header-text {
+  max-width: 400px;
+  text-align: right;
+}
+.header .burger {
+  display: none;
+}
+.header .active-page {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.header .header-text {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20.46px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.contacts__container {
+  width: 95vw;
+  height: 50vh;
+}
+.contacts__container .contacts__wrapper {
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.contacts__container .contacts__wrapper .contacts__info {
+  width: 30%;
+}
+.contacts__container .contacts__wrapper .contacts__info .contacts__info-title {
+  font-family: "Nunito", sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  width: 700;
+  margin-bottom: 30px;
+}
+.contacts__container .contacts__wrapper .contacts__info .contacts__info-line {
+  font-family: "Nunito", sans-serif;
+  font-family: Nunito;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 35px;
+  width: 194px;
+}
+.contacts__container .contacts__wrapper .contacts__info .card__img {
+  margin-right: 35px;
+}
+.contacts__container .contacts__wrapper .contacts__map {
+  width: 70%;
+}/*# sourceMappingURL=contacts__info.css.map */
