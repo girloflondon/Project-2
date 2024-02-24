@@ -17,49 +17,214 @@
     />
   </head>
   <body>
-
     <div class="container">
       <header class="header">
-        <img
-          class="header-logo"
-          src="./assets/images/index/logo.png"
-          alt="logo"
-        />
-        <nav class="header-nav">
-          <ul class="header-nav__items">
-            <li class="header-nav__item">
-              <a href="index.html" class="header-nav__link active-page">Главная</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="about.html" class="header-nav__link">О нас</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="contacts.html" class="header-nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <p class="header-text">
-          Калининградская региональная общественная организация развития
-          инфраструктуры, благоустройства и общественного контроля “Дорожный
-          патруль”
-        </p>
+        <a class="header-link__logo" href="index.html">
+          <img
+            class="header-logo"
+            src="./assets/images/header-footer/logo.png"
+            alt="logo"
+        /></a>
+        <div class="header__block">
+          <nav class="header-nav">
+            <ul class="header-nav__items">
+              <li class="header-nav__item">
+                <a href="about.html" class="header-nav__link active-page"
+                  >О нас</a
+                >
+              </li>
+              <li class="header-nav__item">
+                <a href="contacts.html" class="header-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="header-text">
+            Калининградская региональная общественная организация развития
+            инфраструктуры, благоустройства и общественного контроля “Дорожный
+            патруль”
+          </p>
+        </div>
         <div class="burger">
           <span></span>
         </div>
       </header>
-      
-      <main class="main"></main>
-     
-      <!-- Footer -->
+
+    <main>
+      <!-- Здесь будет баннер-кнопка -->
+      <section class="section1"> 
+        <div class="section1-button"></div>
+      </section>
+      <section class="section2">
+        <!-- Слайдер -->
+        <div class="container-about__slider-wrapper">
+          <div class="container-about__slider">
+            <!-- <h3 class="container-about__slider-title">ФОТО ДОРОЖНЫХ РАБОТ</h3> -->
+            <div class="container-about__slider-images">
+              <div class="slider-imagebox">
+                <img
+                  class="slider-image"
+                  src="./assets/images/index/photo_2024-01-27_14-41-02_1.png"
+                  alt="яма в асфальте"
+                />
+              </div>
+              <div class="slider-imagebox">
+                <img
+                  class="slider-image"
+                  src="./assets/images/index/photo_2024-02-19_18-27-28_2.png"
+                  alt="яма с четырех сторон"
+                />
+              </div>
+              <div class="slider-imagebox">
+                <img
+                  class="slider-image"
+                  src="./assets/images/index/photo_2024-02-19_19-20-04_2.png"
+                  alt="поломанный светофор"
+                />
+              </div>
+              <div class="slider-imagebox none-img">
+                <img
+                  class="slider-image"
+                  src="./assets/images/index/photo_2024-02-19_19-20-09_2.png"
+                  alt="яму видно в окно"
+                />
+              </div>
+              <div class="slider-imagebox">
+                <img
+                  class="slider-image"
+                  src="./assets/images/index/photo_2024-02-19_19-20-14_2.png"
+                  alt="яма с водой"
+                />
+              </div>
+              <div class="slider-imagebox">
+                <img
+                  class="slider-image"
+                  src="./assets/images/index/photo_2024-02-19_19-20-29_1.png"
+                  alt="яма с гравием"
+                />
+              </div>
+              <div class="slider-imagebox">
+                <img
+                  class="slider-image"
+                  src="./assets/images/index/photo_2024-02-19_19-20-17_2.png"
+                  alt="ямы и лужи"
+                />
+              </div>
+              <div class="slider-imagebox">
+                <img
+                  class="slider-image"
+                  src="./assets/images/index/photo_2024-02-19_19-20-32_1.png"
+                  alt="яма в асфальте с камнями"
+                />
+              </div>
+            </div>
+
+            <div class="container-about__slider-images-mob">
+              <input
+                class="all-input"
+                checked
+                type="radio"
+                name="respond"
+                id="desktop"
+              />
+              <article class="article" id="slider">
+                <input
+                  class="article-input"
+                  checked
+                  type="radio"
+                  name="slider"
+                  id="switch1"
+                />
+                <input
+                  class="article-input"
+                  type="radio"
+                  name="slider"
+                  id="switch2"
+                />
+                <input
+                  class="article-input"
+                  type="radio"
+                  name="slider"
+                  id="switch3"
+                />
+                <input
+                  class="article-input"
+                  type="radio"
+                  name="slider"
+                  id="switch4"
+                />
+                <input
+                  class="article-input"
+                  type="radio"
+                  name="slider"
+                  id="switch5"
+                />
+                <div id="slides">
+                  <div id="overflow">
+                    <div class="image">
+                      <article>
+                        <img
+                          src="./assets/images/index/photo_2024-01-27_14-41-02_1.png"
+                          alt="яма на дороге и камни"
+                        />
+                      </article>
+                      <article>
+                        <img
+                          src="./assets/images/index/photo_2024-02-19_19-20-09_2.png"
+                          alt="яма на дороге и лужа"
+                        />
+                      </article>
+                      <article>
+                        <img
+                          src="./assets/images/index/photo_2024-02-19_19-20-17_2.png"
+                          alt="яма на дороге и гравий"
+                        />
+                      </article>
+                      <article>
+                        <img
+                          src="./assets/images/index/photo_2024-02-19_19-20-29_1.png"
+                          alt="яма на дороге и разметка"
+                        />
+                      </article>
+                      <article>
+                        <img
+                          src="./assets/images/index/photo_2024-02-19_19-20-32_1.png"
+                          alt="яма на дороге и деревья"
+                        />
+                      </article>
+                    </div>
+                  </div>
+                </div>
+                <div id="controls">
+                  <label for="switch1"></label>
+                  <label for="switch2"></label>
+                  <label for="switch3"></label>
+                  <label for="switch4"></label>
+                  <label for="switch5"></label>
+                </div>
+                <div id="active">
+                  <label for="switch1"></label>
+                  <label for="switch2"></label>
+                  <label for="switch3"></label>
+                  <label for="switch4"></label>
+                  <label for="switch5"></label>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+    </main>
+
     <footer>
       <div class="footer-wraper">
         <div class="footer-logo">
-          <div class="footer-logo__title">ДОРОЖНЫЙ ПАТРУЛЬ</div>
           <img class="footer-logo__picture"
           src=./assets/images/header-footer/logo.png alt="logo" />
         </div>
         <div class="footer-contacts">
-          <p>г.Калининград ул. Коммунальная, д. 4-6. пом. IV</p>
+          <p>г.Калининград, ул. Коммунальная, д. 4-6. пом. IV</p>
           <p>
             <a class="footer-contacts__mail" href="mailto:okbdd39@mail.ru"
               >okbdd39@mail.ru</a
@@ -87,10 +252,11 @@
           </div>
         </div>
         <div class="footer-organization">
-            <p>Калининградская региональная общественная</p>
-            <p>организация развития инфраструктуры, благоустройства</p>
-            <p>и общественного контроля “Дорожный патруль”</p>
-      </footer>
-
+          <p>Калининградская региональная общественная</p>
+          <p>организация развития инфраструктуры, благоустройства</p>
+          <p>и общественного контроля “Дорожный патруль”</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
