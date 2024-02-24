@@ -17,51 +17,83 @@
     />
   </head>
   <body>
-
     <div class="container">
       <header class="header">
-        <img
-          class="header-logo"
-          src="./assets/images/index/logo.png"
-          alt="logo"
-        />
-        <nav class="header-nav">
-          <ul class="header-nav__items">
-            <li class="header-nav__item">
-              <a href="index.html" class="header-nav__link">Главная</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="about.html" class="header-nav__link">О нас</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="contacts.html" class="header-nav__link active-page"
-                >Контакты</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <p class="header-text">
-          Калининградская региональная общественная организация развития
-          инфраструктуры, благоустройства и общественного контроля “Дорожный
-          патруль”
-        </p>
+        <a class="header-link__logo" href="index.html">
+          <img
+            class="header-logo"
+            src="./assets/images/header-footer/logo.png"
+            alt="logo"
+        /></a>
+        <div class="header__block">
+          <nav class="header-nav">
+            <ul class="header-nav__items">
+              <li class="header-nav__item">
+                <a href="about.html" class="header-nav__link active-page"
+                  >О нас</a
+                >
+              </li>
+              <li class="header-nav__item">
+                <a href="contacts.html" class="header-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="header-text">
+            Калининградская региональная общественная организация развития
+            инфраструктуры, благоустройства и общественного контроля “Дорожный
+            патруль”
+          </p>
+        </div>
         <div class="burger">
           <span></span>
         </div>
       </header>
-    
-      <main class="main"></main>
-      
-<!-- Footer -->
+    <div class="contacts__container">
+      <div class="contacts__wrapper">
+        <div class="contacts__info">
+          <h4 class="contacts__info-title">Контакты</h4>
+          <p class="contacts__info-line">
+            Адрес: г. Калининград, ул. Коммунальная, д. 4-6, пом. IV
+          </p>
+          <div class="contacts__info-img">
+            <a href="#"
+              ><img
+                src="./assets/images/contacts/mail_img.png"
+                alt="mail"
+                class="card__img"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/images/contacts/telegram_img.png"
+                alt="telegram"
+                class="card__img"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/images/contacts/vk_img.png"
+                alt="vk"
+                class="card__img"
+            /></a>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4455fcc48e7b9281bc24112052038b7d6b4b35e0e55afc9235c49adc4fb8f2c4&amp;width=688&amp;height=388&amp;lang=ru_RU&amp;scroll=true"
+          ></script>
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="footer-wraper">
         <div class="footer-logo">
-          <div class="footer-logo__title">ДОРОЖНЫЙ ПАТРУЛЬ</div>
           <img class="footer-logo__picture"
           src=./assets/images/header-footer/logo.png alt="logo" />
         </div>
         <div class="footer-contacts">
-          <p>г.Калининград ул. Коммунальная, д. 4-6. пом. IV</p>
+          <p>г.Калининград, ул. Коммунальная, д. 4-6. пом. IV</p>
           <p>
             <a class="footer-contacts__mail" href="mailto:okbdd39@mail.ru"
               >okbdd39@mail.ru</a
@@ -89,10 +121,11 @@
           </div>
         </div>
         <div class="footer-organization">
-            <p>Калининградская региональная общественная</p>
-            <p>организация развития инфраструктуры, благоустройства</p>
-            <p>и общественного контроля “Дорожный патруль”</p>
-      </footer>
-    </div>
+          <p>Калининградская региональная общественная</p>
+          <p>организация развития инфраструктуры, благоустройства</p>
+          <p>и общественного контроля “Дорожный патруль”</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
