@@ -50,9 +50,27 @@
       </header>
 
       <main>
-        <!-- Здесь будет баннер-кнопка -->
-        <section class="section1">
-          <div class="section1-button"></div>
+        <section class="section__one">
+          <div class="section__one-container">
+            <div class="section-one__info">
+              <p class="section-one__title">Яма на дороге? Не видно разметку?</p>
+              <p class="section-one__title">Не работает светофор?</p>
+              <p class="section-one__title">Напишите нам!</p>
+              <p class="section-one__counter">Получено обращений:<p id="result">2037</p></p>
+            </div>
+            <div class="section-one__button">
+              <button id="myButton" class="btn__counter">Написать</button>
+              <script>
+                var count = 2037;
+                var button = document.getElementById("myButton");
+                var result = document.getElementById("result");
+                button.onclick = function () {
+                  count++;
+                  result.innerHTML = count;
+                }
+              </script>
+            </div>
+          </div>
         </section>
         <section class="section2">
           <!-- Слайдер -->
