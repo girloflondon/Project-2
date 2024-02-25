@@ -44,6 +44,12 @@
     display: grid;
     grid-template-columns: 13% 1fr 1fr 1fr 13%;
     padding-top: 52px;
+    @media screen and (max-width: 1690px) {
+      grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    }
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 5% 1fr 5%;
+    }
     .footer-logo {
       grid-column: 2/3;
       justify-self: left;
@@ -51,6 +57,9 @@
       height: 115px;
       display: flex;
       flex-direction: column;
+      @media screen and (max-width: 800px) {
+        justify-self: center;
+      }
     }
     .footer-contacts {
       justify-self: center;
@@ -61,10 +70,21 @@
       flex-direction: column;
       justify-content: space-between;
       @extend %organizationfont;
-
+      @media screen and (max-width: 800px) {
+        grid-column: 2/3;
+        grid-row: 3/4;
+      }
+      .footer-contacts__adress {
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
+      }
       .footer-contacts__mail {
         text-decoration: none;
         color: black;
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
       }
       .footer-contacts__icons {
         display: flex;
@@ -77,6 +97,26 @@
       width: 440px;
       text-align: end;
       @extend %organizationfont;
+      @media screen and (max-width: 1390px) {
+        display: none;
+      }
+    }
+    .footer-organization_small {
+      display: none;
+      @extend %organizationfont;
+      @media screen and (max-width: 1390px) {
+        display: block;
+        grid-column: 4/5;
+        justify-self: end;
+        text-align: end;
+        @media screen and (max-width: 800px) {
+          grid-column: 2/3;
+          grid-row: 2/3;
+          align-self: center;
+          text-align: center;
+          padding-bottom: 20px;
+        }
+      }
     }
   }
 }
