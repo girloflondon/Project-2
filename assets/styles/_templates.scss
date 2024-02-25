@@ -2,33 +2,58 @@
   box-sizing: border-box;
 }
 
+.open {
+  display: flex !important;
+}
+
 %container {
   height: 100vh;
   display: grid;
-  grid-template-rows: 180px 1fr 310px;
+  grid-template-rows: auto 1fr auto;
 }
 
 %header {
-  padding: 0 13%;
-  display: flex;
-  justify-content: space-between;
+  padding: 29px 13%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
   align-items: center;
   box-shadow: 0px 2px 4px 0px rgba(208, 208, 223, 0.5);
-
-  .header__block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 140px;
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
   }
 
   .header-nav__items {
     display: flex;
+    justify-content: center;
     gap: 70px;
     font-family: $font_main;
     font-weight: 700;
     font-size: 15px;
     line-height: 20px;
+    @media (max-width: 1024px) {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      position: fixed;
+      gap: 50px;
+      width: 100%;
+      height: 200px;
+      top: 150px;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      overflow-y: auto;
+      background-color: #fff;
+      padding-left: 13%;
+    }
+  }
+
+  .header-nav__item {
+    cursor: pointer;
   }
 
   .header-nav__link {
@@ -36,13 +61,78 @@
     color: #000;
   }
 
+  .header-nav__link:hover {
+    text-decoration: underline;
+    font-size: 18px;
+  }
+
   .header-text {
-    max-width: 411px;
+    justify-self: end;
+    max-width: 400px;
     text-align: right;
     @extend %organizationfont;
+    @media (max-width: 1024px) {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   .burger {
     display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    @media (max-width: 1024px) {
+      display: flex;
+      grid-column: 3/4;
+      grid-row: 1/2;
+      align-self: center;
+      justify-self: center;
+    }
+  }
+  .burger span {
+    height: 3px;
+    width: 100%;
+    transform: scale(1);
+    background-color: rgb(75, 76, 90);
+  }
+
+  .burger::before,
+  .burger::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(75, 76, 90);
+    transition: all 0.3s ease 0s;
+  }
+
+  .burger::before {
+    top: 0;
+  }
+
+  .burger::after {
+    bottom: 0;
+  }
+
+  .burger.active span {
+    transform: scale(0);
+  }
+
+  .burger.active::before {
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(45deg);
+  }
+  .burger.active::after {
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-45deg);
   }
 }
 
