@@ -144,7 +144,7 @@ footer .footer-wraper .footer-organization_small {
   }
 }
 
-.header .header-text, .footer .footer-wraper .footer-contacts, footer .footer-wraper .footer-organization, footer .footer-wraper .footer-organization_small {
+.header .header-text, footer .footer-wraper .footer-contacts, footer .footer-wraper .footer-organization, footer .footer-wraper .footer-organization_small {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 15px;
