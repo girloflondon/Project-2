@@ -14,18 +14,34 @@
   font-weight: 700;
   src: local("../fonts/Scada-Bold.ttf");
 }
+* {
+  box-sizing: border-box;
+}
+
+.open {
+  display: flex !important;
+}
+
 .container {
   height: 100vh;
   display: grid;
-  grid-template-rows: 180px 1fr 310px;
+  grid-template-rows: auto 1fr auto;
 }
 
 .header {
-  padding: 0 13%;
+  padding: 29px 13%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
   align-items: center;
   box-shadow: 0px 2px 4px 0px rgba(208, 208, 223, 0.5);
+}
+@media (max-width: 1024px) {
+  .header {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
 }
 .header .header-nav__items {
   display: flex;
@@ -36,17 +52,103 @@
   font-size: 15px;
   line-height: 20px;
 }
+@media (max-width: 1024px) {
+  .header .header-nav__items {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: fixed;
+    gap: 50px;
+    width: 100%;
+    height: 200px;
+    top: 150px;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    overflow-y: auto;
+    background-color: #fff;
+    padding-left: 13%;
+  }
+}
+.header .header-nav__item {
+  cursor: pointer;
+}
 .header .header-nav__link {
   text-decoration: none;
   color: #000;
+}
+.header .header-nav__link:hover {
+  text-decoration: underline;
+  font-size: 18px;
 }
 .header .header-text {
   justify-self: end;
   max-width: 400px;
   text-align: right;
 }
+@media (max-width: 1024px) {
+  .header .header-text {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .header .header-text {
+    display: none;
+  }
+}
 .header .burger {
   display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  width: 30px;
+  height: 20px;
+}
+@media (max-width: 1024px) {
+  .header .burger {
+    display: flex;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+  }
+}
+.header .burger span {
+  height: 3px;
+  width: 100%;
+  transform: scale(1);
+  background-color: rgb(75, 76, 90);
+}
+.header .burger::before,
+.header .burger::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: rgb(75, 76, 90);
+  transition: all 0.3s ease 0s;
+}
+.header .burger::before {
+  top: 0;
+}
+.header .burger::after {
+  bottom: 0;
+}
+.header .burger.active span {
+  transform: scale(0);
+}
+.header .burger.active::before {
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(45deg);
+}
+.header .burger.active::after {
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(-45deg);
 }
 
 footer .footer-wraper {
@@ -87,6 +189,7 @@ footer .footer-wraper .footer-contacts {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 30px;
 }
 @media screen and (max-width: 800px) {
   footer .footer-wraper .footer-contacts {
@@ -151,6 +254,39 @@ footer .footer-wraper .footer-organization_small {
   line-height: 20.46px;
 }
 
-* {
-  box-sizing: border-box;
+.contacts__container {
+  width: 95vw;
+  height: 50vh;
+}
+.contacts__container .contacts__wrapper {
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.contacts__container .contacts__wrapper .contacts__info {
+  width: 30%;
+}
+.contacts__container .contacts__wrapper .contacts__info .contacts__info-title {
+  font-family: "Nunito", sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  width: 700;
+  margin-bottom: 30px;
+}
+.contacts__container .contacts__wrapper .contacts__info .contacts__info-line {
+  font-family: "Nunito", sans-serif;
+  font-family: Nunito;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 35px;
+  width: 194px;
+}
+.contacts__container .contacts__wrapper .contacts__info .card__img {
+  margin-right: 35px;
+}
+.contacts__container .contacts__wrapper .contacts__map {
+  width: 70%;
 }/*# sourceMappingURL=contacts.css.map */
