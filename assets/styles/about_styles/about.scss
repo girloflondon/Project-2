@@ -8,6 +8,9 @@
 .header {
   @extend %header;
 }
+footer {
+  @extend %footer;
+}
 
 .container-about__wrapper {
   max-width: 1920px;
@@ -44,8 +47,4 @@
       @extend %gallery;
     }
   }
-}
-
-footer {
-  @extend %footer;
 }
