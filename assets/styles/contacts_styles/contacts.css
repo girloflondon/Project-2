@@ -152,7 +152,6 @@
 }
 
 footer .footer-wraper {
-  height: 310px;
   background-color: #eaeaea;
   display: grid;
   grid-template-columns: 13% 1fr 1fr 1fr 13%;
@@ -160,12 +159,27 @@ footer .footer-wraper {
 }
 @media screen and (max-width: 1690px) {
   footer .footer-wraper {
-    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    grid-template-columns: 13% 1fr 1fr 1fr 13%;
   }
 }
 @media screen and (max-width: 800px) {
   footer .footer-wraper {
     grid-template-columns: 5% 1fr 5%;
+  }
+}
+footer .footer-wraper .itgirls-link {
+  grid-row: 2/3;
+  grid-column: 2/5;
+  justify-self: center;
+  padding-top: 20px;
+}
+footer .footer-wraper .itgirls-link a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 800px) {
+  footer .footer-wraper .itgirls-link {
+    grid-row: 4/5;
   }
 }
 footer .footer-wraper .footer-logo {
@@ -243,7 +257,7 @@ footer .footer-wraper .footer-organization_small {
     grid-row: 2/3;
     align-self: center;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 20px 0;
   }
 }
 
