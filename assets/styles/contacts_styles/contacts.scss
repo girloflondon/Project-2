@@ -11,11 +11,10 @@
 
 .contacts__container {
   max-width: 1920px;
-  margin: 0 auto;
   .contacts__wrapper {
     display: flex;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+    margin: 0 13%;
+    padding-top: 4%;
     @media screen and (max-width: 1024px) {
       margin-right: 5%;
     }
@@ -28,7 +27,6 @@
       @media screen and (max-width: 768px) {
         width: 100%;
         text-align: center;
-        margin-left: 4vw;
       }
       .contacts__info-title {
         font-family: $font_main;
@@ -48,7 +46,12 @@
       }
       .card__img {
         margin-right: 35px;
+        @media screen and (max-width:1240px) {
+          display: block;
+          padding-bottom: 15px;
+        }
         @media screen and (max-width: 768px) {
+          display: inline;
           margin-left: 5%;
         }
       }
@@ -56,15 +59,30 @@
     .contacts__map {
       width: 70%;
       padding-top: 4vh;
-      @media screen and (max-width: 1280px) {
-        margin-right: 2%;
-      }
-      @media screen and (max-width: 480px) {
-        margin-left: 2%;
-        margin-top: 4%;
-      }
+      padding-bottom: 4vh;
     }
   }
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:80%;
+  padding-right: 50%;
+  padding-left: 50%;
+  position:relative;
+  height:0;
+  display: grid;
+  justify-content: center;
+  @media screen and (max-width:768px) {
+    margin-left: 19%;
+  }
+}
+.map-responsive iframe{
+  left:0%;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 footer {
   @extend %footer;
