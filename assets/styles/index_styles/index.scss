@@ -105,6 +105,9 @@
 .section2 {
   margin: 0 13%;
   @extend %gallery;
+  @media (max-width: 1024px) {
+    margin: 0 5%;
+  }
 }
 
 footer {

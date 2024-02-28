@@ -16,7 +16,7 @@
     margin: 0 13%;
     padding-top: 4%;
     @media screen and (max-width: 1024px) {
-      margin-right: 5%;
+      margin: 0 5%;
     }
     @media screen and (max-width: 768px) {
       display: block;
@@ -46,7 +46,7 @@
       }
       .card__img {
         margin-right: 35px;
-        @media screen and (max-width:1240px) {
+        @media screen and (max-width: 1240px) {
           display: block;
           padding-bottom: 15px;
         }
@@ -64,25 +64,25 @@
   }
 }
 
-.map-responsive{
-  overflow:hidden;
-  padding-bottom:80%;
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 80%;
   padding-right: 50%;
   padding-left: 50%;
-  position:relative;
-  height:0;
+  position: relative;
+  height: 0;
   display: grid;
   justify-content: center;
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     margin-left: 19%;
   }
 }
-.map-responsive iframe{
-  left:0%;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
+.map-responsive iframe {
+  left: 0%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 footer {
   @extend %footer;

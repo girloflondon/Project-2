@@ -19,6 +19,10 @@
     }
 
     padding-top: 4%;
+    @media (max-width: 1024px) {
+      margin: 0 5%;
+    }
+
     .container-about__title {
       margin: 0;
       color: #1d5deb;
