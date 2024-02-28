@@ -1,0 +1,21 @@
+@font-face {
+  src: url("../fonts/NunitoSans-VariableFont.ttf");
+  font-family: "Nunito";
+}
+
+@font-face {
+  font-family: "Scada";
+  font-style: regular;
+  font-weight: 400;
+  src: local("../fonts/Scada-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Scada";
+  font-style: bold;
+  font-weight: 700;
+  src: local("../fonts/Scada-Bold.ttf");
+}
+
+$font_main: "Nunito", sans-serif;
+$font_add: "Scada", sans-serif;
