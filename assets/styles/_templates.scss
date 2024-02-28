@@ -7,6 +7,8 @@
 }
 
 %container {
+  max-width: 1920px;
+  margin: 0 auto;
   height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -20,6 +22,7 @@
   align-items: center;
   box-shadow: 0px 2px 4px 0px rgba(208, 208, 223, 0.5);
   @media (max-width: 1024px) {
+    padding: 29px 5%;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr;
     gap: 20px;
@@ -62,8 +65,7 @@
   }
 
   .header-nav__link:hover {
-    text-decoration: underline;
-    font-size: 18px;
+    color: rgb(29, 93, 235);
   }
 
   .header-text {
@@ -199,6 +201,9 @@
     padding-top: 52px;
     @media screen and (max-width: 1690px) {
       grid-template-columns: 13% 1fr 1fr 1fr 13%;
+    }
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: 5% 1fr 1fr 1fr 5%;
     }
     @media screen and (max-width: 800px) {
       grid-template-columns: 5% 1fr 5%;
