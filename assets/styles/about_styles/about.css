@@ -351,6 +351,11 @@ footer .footer-wraper .footer-organization_small {
     margin: 0 5%;
   }
 }
+@media (max-width: 1024px) {
+  .container-about__wrapper .container-about__content {
+    margin: 0 5%;
+  }
+}
 .container-about__wrapper .container-about__content .container-about__title {
   margin: 0;
   color: #1d5deb;
