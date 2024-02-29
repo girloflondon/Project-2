@@ -16,7 +16,7 @@
     margin: 0 13%;
     padding-top: 4%;
     @media screen and (max-width: 1024px) {
-      margin: 0 5%;
+      margin: 0 4%;
     }
     @media screen and (max-width: 768px) {
       display: block;
@@ -47,8 +47,8 @@
       .card__img {
         margin-right: 35px;
         @media screen and (max-width: 1240px) {
-          display: block;
-          padding-bottom: 15px;
+          display: inline;
+          margin-right: 20px;
         }
         @media screen and (max-width: 768px) {
           display: inline;
@@ -59,14 +59,14 @@
     .contacts__map {
       width: 70%;
       padding-top: 4vh;
-      padding-bottom: 4vh;
+      padding-bottom: 3vh;
     }
   }
 }
 
 .map-responsive {
   overflow: hidden;
-  padding-bottom: 80%;
+  padding-bottom: 50%;
   padding-right: 50%;
   padding-left: 50%;
   position: relative;
@@ -74,7 +74,8 @@
   display: grid;
   justify-content: center;
   @media screen and (max-width: 768px) {
-    margin-left: 19%;
+    margin-left: 0%;
+    padding-right: 92%;
   }
 }
 .map-responsive iframe {
