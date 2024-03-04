@@ -1,0 +1,58 @@
+@import "../vars";
+@import "../templates";
+
+.container {
+  @extend %container;
+}
+
+.header {
+  @extend %header;
+}
+
+.container-about__wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  .container-about__content {
+    margin: 0 13%;
+    @media (max-width: 1024px) {
+      margin: 0 5%;
+    }
+
+    padding-top: 4%;
+    @media (max-width: 1024px) {
+      margin: 0 5%;
+    }
+
+    .container-about__title {
+      margin: 0;
+      color: #1d5deb;
+      font-family: $font_main;
+      font-size: clamp(18px, 2vw, 28px);
+      font-weight: 700;
+      line-height: clamp(20px, 2vw, 40px);
+      text-align: left;
+    }
+    .container-about__description {
+      margin-right: 50%;
+      @media (max-width: 1500px) {
+        margin-right: 0%;
+      }
+      .container-about__description-text {
+        margin-top: 2%;
+        color: #0b1f33;
+        font-family: $font_main;
+        font-size: clamp(13px, 2vw, 15px);
+        font-weight: 400;
+        line-height: clamp(14px, 2vw, 25px);
+        text-align: left;
+      }
+    }
+    & {
+      @extend %gallery;
+    }
+  }
+}
+
+footer {
+  @extend %footer;
+}

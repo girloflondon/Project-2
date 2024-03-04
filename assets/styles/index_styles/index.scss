@@ -1,0 +1,152 @@
+@import "../vars";
+@import "../templates";
+
+.container {
+  @extend %container;
+}
+
+.header {
+  @extend %header;
+}
+
+.section__one {
+  /*max-width: 1920px;
+  margin: 0 auto;*/
+  margin: 0 13%;
+  font-family: $font_add;
+  font-size: 36px;
+  line-height: 57px;
+
+  .section__one-container {
+    display: grid;
+    grid-template: 1fr / 70% 30%;
+    /*width: 74%;*/
+    margin: 60px auto;
+    padding: 35px 30px;
+    box-shadow: 0px 2px 4px #1d5deb;
+    border-radius: 12px;
+
+    .section-one__info {
+      display: grid;
+      grid-template: repeat(3, 1fr) 3fr / 1fr;
+
+      .counter {
+        align-self: flex-end;
+
+        #result {
+          padding-left: 20px;
+        }
+      }
+    }
+
+    .section-one__button {
+      display: grid;
+      grid-template: 1fr / 1fr;
+      justify-self: center;
+      align-self: center;
+
+      #myButton {
+        padding: 20px 57px;
+        font-family: $font_main;
+        color: #fff;
+        background-color: #1d5deb;
+        border-radius: 12px;
+        border: none;
+      }
+    }
+  }
+}
+
+.section2 {
+  margin: 0 13%;
+  @extend %gallery;
+}
+
+footer {
+  @extend %footer;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .section__one {
+    font-size: 28px;
+    line-height: 48px;
+
+    #myButton {
+      padding: 20px 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .section__one {
+    margin: 0 5%;
+    font-size: 24px;
+    line-height: 40px;
+
+    .section__one-container {
+      display: grid;
+      grid-template: repeat(3, auto) / 1fr;
+      grid-gap: 30px;
+      text-align: center;
+
+      #myButton {
+        padding: 20px 50px;
+      }
+    }
+  }
+
+  .section2 {
+    margin: 0 5%;
+  }
+}
+
+@media screen and (min-width: 560px) and (max-width: 767px) {
+  .section__one {
+    margin: 0 5%;
+    font-size: 20px;
+    line-height: 30px;
+
+    .section__one-container {
+      display: grid;
+      grid-template: repeat(3, auto) / 1fr;
+      grid-gap: 30px;
+      text-align: center;
+
+      #myButton {
+        padding: 15px 30px;
+      }
+    }
+  }
+
+  .section2 {
+    margin: 0 5%;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .section__one {
+    margin: 0 5%;
+    font-size: 16px;
+    line-height: 28px;
+
+    .section__one-container {
+      display: grid;
+      grid-template: repeat(3, auto) / 1fr;
+      grid-gap: 15px;
+      text-align: center;
+
+      .section-one__info {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr) 1.5fr;
+      }
+
+      #myButton {
+        padding: 15px 30px;
+      }
+    }
+  }
+
+  .section2 {
+    margin: 0 5%;
+  }
+}
