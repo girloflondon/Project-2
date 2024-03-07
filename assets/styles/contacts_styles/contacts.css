@@ -347,6 +347,44 @@ footer .footer-wraper .footer-organization_small {
   padding-bottom: 4vh;
 }
 
+.osm_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 388px;
+  width: 668px;
+}
+@media (max-width: 660px) {
+  .osm_canvas {
+    width: 420px !important;
+    height: 388px;
+  }
+}
+@media (max-width: 430px) {
+  .osm_canvas {
+    width: 320px !important;
+    height: 388px;
+  }
+}
+
+.mapouter {
+  position: static;
+  text-align: right;
+  height: 388px;
+  width: 668px;
+}
+@media (max-width: 660px) {
+  .mapouter {
+    width: 420px !important;
+    height: 388px;
+  }
+}
+@media (max-width: 430px) {
+  .mapouter {
+    width: 320px !important;
+    height: 388px;
+  }
+}
+
 .map-responsive {
   overflow: hidden;
   padding-bottom: 50%;
